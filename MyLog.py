@@ -3,6 +3,11 @@ import os
 from logging import handlers
 
 
+def getLogger(name):
+    mylog=MyLog(name)
+    return mylog.logger
+
+
 class MyLog:
     logger=None
     def __init__(self,name,filename='log.log'):
@@ -23,6 +28,3 @@ class MyLog:
         console.setLevel(logging.INFO)
         console.setFormatter(logging.Formatter(format,datefmt))
         self.logger.addHandler(console)
-
-    def getLogger(self):
-        return self.logger
