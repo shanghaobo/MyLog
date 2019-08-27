@@ -29,3 +29,5 @@ class MyLog:
 def getLogger(name):
     mylog=MyLog(name)
     return mylog.logger
+
+log=getLogger(__name__)

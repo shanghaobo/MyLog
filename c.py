@@ -1,5 +1,5 @@
-import public
-log=public.log
+import MyLog
+log=MyLog.log
 import a
 import b
 
