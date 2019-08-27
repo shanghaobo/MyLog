@@ -1,6 +1,6 @@
-from MyLog import getLogger
+import public
+log=public.log
 
 def aa():
-    log = getLogger(__name__)
 
     log.info('a')

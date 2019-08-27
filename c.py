@@ -1,10 +1,9 @@
-from MyLog import getLogger
+import public
+log=public.log
 import a
 import b
 
 a.aa()
 b.bb()
-
-log=getLogger(__name__)
 
 log.info('c')
